@@ -56,7 +56,7 @@ AI 客户端 (TextHost/Claude)  ──stdio──▶  MCP Server (.NET 8)
   <AddIn Type="Application">
     <Name>Revits</Name>
     <Assembly>RevitTextMcp\Revits.dll</Assembly>
-    <ClientId>你的唯一GUID</ClientId>
+    <ClientId>CC47DD5E-9079-409B-8174-58306BFC54B0</ClientId>
     <FullClassName>Revits.RevitApp</FullClassName>
     <VendorId>NAME</VendorId>
     <VendorDescription>Your Company</VendorDescription>
@@ -64,7 +64,7 @@ AI 客户端 (TextHost/Claude)  ──stdio──▶  MCP Server (.NET 8)
 </RevitAddIns>
 ```
 
-首次启动 Revit 会弹安全警告，点"总是载入"。
+首次启动 Revit 会弹安全警告，点"载入"。
 
 ### 2. 配置 MCP Client
 
