@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<RevitAddIns>
+  <AddIn Type="Application">
+    <Name>Revits</Name>
+    <Assembly>RevitTextMcp\Revits.dll</Assembly>
+    <ClientId>CC47DD5E-9079-409B-8174-58306BFC54B0</ClientId>
+    <FullClassName>Revits.RevitApp</FullClassName>
+    <VendorId>NAME</VendorId>
+    <VendorDescription>Your Company Information</VendorDescription>
+  </AddIn>
+</RevitAddIns>

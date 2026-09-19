@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "配置文件 1": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "apiKey": "sk-ed000c2260b548e3996202c1d48d1a41"
+      }
+    }
+  }
+}

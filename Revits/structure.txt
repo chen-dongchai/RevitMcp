@@ -1,0 +1,25 @@
+MyRevitMcp.Revit/
+├── MyRevitMcp.Revit.csproj          ← 传统 .NET Framework 4.8 项目
+├── Properties/
+│   └── AssemblyInfo.cs              ← 程序集信息（模板自带）
+│
+├── App.cs                           ← 入口：IExternalApplication
+├── App.addin                        ← Revit 加载配置（复制到 Addins 目录）
+│
+├── Transport/
+│   ├── TcpTransportServer.cs        ← TCP 监听 + 后台线程
+│   └── AuthValidator.cs             ← token 校验（可选）
+│
+├── Scheduling/
+│   ├── McpExternalEventHandler.cs   ← 队列 + Execute（Revit 主线程）
+│   └── RequestDispatcher.cs         ← 路由表：Action 名 → IRevitAction
+│
+├── Actions/
+│   ├── IRevitAction.cs              ← 接口
+│   ├── CreateWallAction.cs          ← 创建墙
+│   ├── QueryElementsAction.cs       ← 查询元素
+│   └── DeleteElementAction.cs       ← 删除元素
+│
+└── Infrastructure/
+    ├── Logger.cs                    ← 日志
+    └── Timeouts.cs                  ← 超时常量
