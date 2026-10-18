@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Actions\EchoAction.cs" />
+    <Compile Include="Actions\InfoAction.cs" />
     <Compile Include="Actions\IRevitAction.cs" />
     <Compile Include="Infrastructure\Logger.cs" />
     <Compile Include="Transport\TcpTransportServer.cs" />

@@ -22,7 +22,23 @@ namespace Revits.Schduling
             // 注册所有支持的操作
             
             Register(ProtocolConstants.ActionEcho, new EchoAction());
-            
+            Register(ProtocolConstants.ActionGetCategoryInfo, new GetCategoryInfoAction());
+
+            Register(ProtocolConstants.ActionGetProjectInfo, new GetProjectInfoAction());
+            Register(ProtocolConstants.ActionGetModelStatistics, new GetModelStatistics());
+            Register(ProtocolConstants.ActionGetLevelInfo, new GetLevelInfoAction());
+            Register(ProtocolConstants.ActionGetViewInfo, new GetViewInfoAction());
+            Register(ProtocolConstants.ActionGetViewSheetsInfo, new GetViewSheetsInfoAction());
+            Register(ProtocolConstants.ActionGetProjectFamilyTypes, new GetProjectFamilyTypesAction());
+            Register(ProtocolConstants.ActionGetFamilyTypeParameters, new GetFamilyTypeParametersAction());
+            Register(ProtocolConstants.ActionGetElementInstanceParameters, new GetElementInstanceParametersAction());
+            Register(ProtocolConstants.ActionGetElementIdsByCategoryId, new GetElementIdsByCategoryIdAction());
+            Register(ProtocolConstants.ActionIdentifyUnknownElementId, new IdentifyUnknownElementIDAction());
+            Register(ProtocolConstants.ActionGetElementLocation, new GetElementLocationAction());
+            Register(ProtocolConstants.ActionGetElementGeometry, new GetElementGeometryAction());
+            Register(ProtocolConstants.ActionGetHostOpeningsAndCuts, new GetHostOpeningsAndCutsAction());
+            Register(ProtocolConstants.ActionGetSpatialRelation, new GetSpatialRelationAction());
+
             // 新增 tool 在这里加一行
         }
 
